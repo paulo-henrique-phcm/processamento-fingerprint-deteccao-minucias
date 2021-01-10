@@ -1,5 +1,5 @@
 <h1> Processamento fingerprint detecção minúcias </h1>
-(EM DESENVOLVIMENTO) parte do meu tcc<br>
+(EM DESENVOLVIMENTO) poderá fazer parte do meu tcc<br>
 Algoritmo que detecta linhas e minúcias, tal como seus sentidos vetoriais usando principalmente filtros sobel, de gabor e outros. Futura implementação de rede neural em busca de melhor desempenho do software.
 
 <h1>Detecção de gradiente de angulo</h1>
