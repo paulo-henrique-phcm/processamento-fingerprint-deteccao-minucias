@@ -38,6 +38,6 @@ A primeira parte da presente idéia, tal como seu algorítmo foram originados a 
 <h2> Gradiente com setas</h2>
 <p>
   Para plotar, usamos os conceitos ja citados acima. Com os dois mapas sobles arctg e o calculado em abs e aproximado, num intervalo de a cada 10 píxels (definido na interface) plotamos uma seta direcional. Existe a opção neste caso, de quando for plotar, fazer mais uma análise local ao redor do ponto para ter mais precisão, podendo optar por um filtro diferente do que foi usado no primeiro processamento para observer os diferentes comportamentos. Futuramente talvez será interessante implementar uma sequencia grande de diversos filtros a serem marcados/selecionados.<br><br>
-  è possível observer no gradiente plotado abaixo que alguns angulos estão perpendiculares á direção predominante, isso pode ser decorrende de falhas na imagem analisada e a limitação do filtro sobel 3x3 e/ou no mapa sobels arctg que por algum motivo acusa estar para um lado quando na verdade está para outro, o que também pode ser problema de resolução de filtros.
+  É possível observer no gradiente plotado abaixo que alguns angulos estão perpendiculares á direção predominante, isso pode ser decorrende de falhas na imagem analisada e a limitação do filtro sobel 3x3 e/ou no mapa sobels arctg que por algum motivo acusa estar para um lado quando na verdade está para outro, o que também pode ser problema de resolução de filtros.
 </p>
 <img src="setas.png"/>
