@@ -26,11 +26,11 @@ A primeira parte da presente idéia, tal como seu algorítmo foram originados a 
       Observe que para representar uma direção vetorial só precisamos de 180º, o qual perdemos por uma boa razão. Mas ainda temos o mapa (sobels arctg). Quando o limitamos os angulos á 90º, basta imagenar que por exemplo, o angulo (135 ou 3π/4) é representado aqui por (45 ou π/4), ou seja usando o mapa sobels arctg podemos determinar se será para direita (>90º) ou para a esquerda (<90º). isso é importante para salvar os dados ou plotar.<br><br>
       O mapa estando tratado podemos aplicar algum filtro para melhorar a distribuição. até o momento foram implementados três métodos para testes.
       Se olharmos bem, o mapa possui linhas que com certeza vão interferir no angulo horiginal, caso apliquemos um filtro de média simples estes espaços que fogem muito do valor que se espera vão alterar o valor real, e foi pensando nisso que eu desenvolvi um filtro usando a opção histograma da biblioteca numpy.
-      <h4>⊛ Aproximação com Histograma<h4>
+      <h4>⊛ Aproximação com Histograma</h4>
   Para o histograma e para a média harmonica fiz as opções de filtro conolucional 3x3 e 5x5 manualmente. Basicamente Este filtro vai convoluir a imagem, mas para cada ponto e ao redor, ao invés de somar, é calculado um histograma, e o range com os angulos que mais aparecem é atribuido ao ponto em questão, assim, caso hajam pontos próximos, a chance deles serem considerados é muito menor e o risco de alterar o valor real por calculo de média é diminuido. 
-      <h4>⊛ Aproximação com MeanHarmonic<h4>
+      <h4>⊛ Aproximação com MeanHarmonic</h4>
   Como discutido, dependendo da quantidade de pontos errôneos ao redor, uma média comum pode alterar os valores reais, mesmo que antes naquele ponto o valor já fosse o correto. Para resolver isso, a média harmonica, semelhante á média comum, aproxima um valor comum, mas caso hajam valores que se repitam ou muito próximos, diz-se que estes representam o todo, por fim este método só foi implementado para testes e esta se saindo bem.
-      <h4>⊛ Aproximação com blur<h4>
+      <h4>⊛ Aproximação com blur</h4>
   Apezar de insistirmos no problema de perda de precisão, uma função com a opção blur foi implementada, pois ela será util depois, sem contar que, por mais que saibamos que problemas surgirão com seu uso nesta fase, caso façamos teste podemos constatar que uma coisa ou outra pode ser afetada positivamente e podemos tirar proveito disso.
 </p>
 <img src="Captura de tela de 2021-01-08 10-26-19.png"/>
